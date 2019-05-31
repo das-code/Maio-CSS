@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'img-header text-header';
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  grid-area: img-header;
+}
+
+.content-text {
+  padding: 2rem;
+  grid-area: text-header;
+}

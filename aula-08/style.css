@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  height: 100vh;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: radial-gradient(lightblue, darkblue);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: radial-gradient(circle at top left, gold 30%, tomato);
+}
+
+p {
+  text-align: center;
+  font-size: 2rem;
+}

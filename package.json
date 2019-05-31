@@ -1,0 +1,15 @@
+{
+  "name": "maio-css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Davi Alves <alves.pindoba@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --out-dir build"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.20.3"
+  }
+}

@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'content image';
+  height: 100vh;
+}
+
+.content {
+  grid-area: content;
+}
+
+#cabecalho-principal {
+  margin: 1.5rem 3rem;
+
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0;
+  }
+}
+
+#lista-exercicios {
+  margin: 1.5rem;
+
+  li {
+    margin: 0.2rem 0;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1rem;
+  }
+}
+
+#image {
+  grid-area: image;
+  background-image: url(design.png);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 640px) {
+  body {
+    grid-template-areas: 'content';
+    grid-template-columns: 1fr;
+  }
+}

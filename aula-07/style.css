@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+  gap: 1rem;
+  grid-template-areas: 'item1 item2' 'item3 item4';
+}
+
+.item1 {
+  grid-area: item1;
+  background-color: lightblue;
+  background-image: url(star.png);
+  background-repeat: space;
+}
+
+.item2 {
+  grid-area: item2;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)),
+    url(sea.jpg);
+  background-size: cover;
+}
+
+.item3 {
+  grid-area: item3;
+  background-color: #555;
+}
+
+.item4 {
+  grid-area: item4;
+  background-color: tomato;
+  display: grid;
+}
+
+.item4 > h1 {
+  align-self: center;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.item4 > h1::before,
+.item4 > h1::after {
+  content: url(star.png);
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  padding: 0 0.5rem;
+}

@@ -1,0 +1,36 @@
+body {
+  background-color: #222;
+}
+
+.container {
+  background-image: url(sea.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 100px auto;
+  width: 600px;
+}
+
+.text {
+  color: #fff;
+  background-color: lightseagreen;
+  font-size: 6rem;
+  font-weight: bolder;
+  line-height: 200px;
+  text-align: center;
+  mix-blend-mode: multiply;
+}
+
+.text-mask {
+  font-size: 6rem;
+  font-weight: bolder;
+  text-align: center;
+  width: 600px;
+  margin: auto;
+
+  color: transparent;
+  background-image: url(sea.jpg);
+  background-position: center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+}

@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.text-content {
+  margin: 0 20vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-content h1 {
+  margin-bottom: 5vh;
+  text-align: center;
+}

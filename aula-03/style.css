@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 'item1 item2' 'item3 item4';
+  gap: 15px;
+  height: 100vh;
+}
+
+.item1 {
+  grid-area: item1;
+  background-image: linear-gradient(to top right, red, blue);
+}
+
+.item2 {
+  grid-area: item2;
+  background-image: linear-gradient(35deg, cyan, tomato, gold);
+}
+
+.item3 {
+  grid-area: item3;
+  background-image: linear-gradient(
+    to right,
+    blue 20%,
+    yellow 20%,
+    yellow 80%,
+    blue 80%
+  );
+}
+
+.item4 {
+  grid-area: item4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1)
+    ),
+    url(./artificial-flowers.jpg);
+  background-size: cover;
+  background-position: center;
+}
