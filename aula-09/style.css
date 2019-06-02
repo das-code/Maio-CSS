@@ -8,19 +8,19 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 'item-left item-right';
+  grid-template-areas: 'item1 item2';
   height: 100vh;
 }
 
 #item1 {
-  grid-area: item-left;
+  grid-area: item1;
   background-color: lightskyblue;
   display: grid;
   place-items: center;
 }
 
 #item2 {
-  grid-area: item-right;
+  grid-area: item2;
   background-color: lightcoral;
   display: grid;
   place-items: center;
@@ -53,4 +53,12 @@ body {
 
 .btn-2:hover {
   box-shadow: 0 0 0 0.5rem lightblue;
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'item1' 'item2';
+  }
 }
