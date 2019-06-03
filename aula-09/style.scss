@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  height: 100vh;
+}
+
+.button {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+}
+
+#item1 {
+  background-color: lightskyblue;
+  display: grid;
+  place-items: center;
+
+  .btn-1 {
+    color: #fff;
+    border: solid 0.2rem lightcoral;
+    transition: border-width 500ms linear;
+
+    &:hover {
+      border-width: 0.5rem;
+    }
+  }
+}
+
+#item2 {
+  background-color: lightcoral;
+  display: grid;
+  place-items: center;
+
+  .btn-2 {
+    color: #fff;
+    box-shadow: 0 0 0 0.2rem lightskyblue;
+    transition: box-shadow 500ms linear;
+
+    &:hover {
+      box-shadow: 0 0 0 0.5rem lightskyblue;
+    }
+  }
+}
